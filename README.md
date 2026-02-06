@@ -16,25 +16,25 @@ Regulators closely monitor complaint trends, and persistent issues may trigger a
 
 This project addresses the following key business questions:
 
-  -Which financial products generate the highest number of complaints?
-  -How have complaint volumes changed over time?
-  -What are the most common consumer-reported issues?
-  -How effectively do companies respond to complaints?
-  -Which companies may pose potential operational or compliance risk?
+  Which financial products generate the highest number of complaints?
+  How have complaint volumes changed over time?
+  What are the most common consumer-reported issues?
+  How effectively do companies respond to complaints?
+  Which companies may pose potential operational or compliance risk?
 
 ## Why This Matters
 
--Consumer complaints are a leading risk indicator in financial services.
--Timely response is a core compliance KPI.
--Product-level complaint patterns help identify high-risk offerings.
--Company-level performance benchmarking supports operational oversight.
+Consumer complaints are a leading risk indicator in financial services.
+Timely response is a core compliance KPI.
+Product-level complaint patterns help identify high-risk offerings.
+Company-level performance benchmarking supports operational oversight.
 
 ## Data Source
 
--CFPB Consumer Complaints Database.
--Source: Google BigQuery (public dataset).
--Time period analyzed: 2019–2023.
--Records analyzed: 1.4M+ complaints.
+CFPB Consumer Complaints Database.
+Source: Google BigQuery (public dataset).
+Time period analyzed: 2019–2023.
+Records analyzed: 1.4M+ complaints.
 
 ## Data Preprocessing & Feature Engineering
 
