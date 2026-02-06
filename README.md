@@ -8,33 +8,33 @@ The objective is to transform large-scale, raw complaint data into business-read
 ## Business Problem
 
 Financial institutions face significant regulatory, reputational, and operational risk when:
--Complaint volumes increase rapidly, 
--Complaints concentrate around specific products or services,
--Companies fail to respond to complaints in a timely manner.
+Complaint volumes increase rapidly, 
+Complaints concentrate around specific products or services,
+Companies fail to respond to complaints in a timely manner.
 
 Regulators closely monitor complaint trends, and persistent issues may trigger audits or enforcement actions. Executives and risk teams therefore need high-level visibility, not raw data.
 
 This project addresses the following key business questions:
 
--Which financial products generate the highest number of complaints?
--How have complaint volumes changed over time?
--What are the most common consumer-reported issues?
--How effectively do companies respond to complaints?
--Which companies may pose potential operational or compliance risk?
+Which financial products generate the highest number of complaints?
+How have complaint volumes changed over time?
+What are the most common consumer-reported issues?
+How effectively do companies respond to complaints?
+Which companies may pose potential operational or compliance risk?
 
 ## Why This Matters
 
--Consumer complaints are a leading risk indicator in financial services.
--Timely response is a core compliance KPI.
--Product-level complaint patterns help identify high-risk offerings.
--Company-level performance benchmarking supports operational oversight.
+Consumer complaints are a leading risk indicator in financial services.
+Timely response is a core compliance KPI.
+Product-level complaint patterns help identify high-risk offerings.
+Company-level performance benchmarking supports operational oversight.
 
 ## Data Source
 
--CFPB Consumer Complaints Database.
--Source: Google BigQuery (public dataset).
--Time period analyzed: 2019–2023.
--Records analyzed: 1.4M+ complaints.
+CFPB Consumer Complaints Database.
+Source: Google BigQuery (public dataset).
+Time period analyzed: 2019–2023.
+Records analyzed: 1.4M+ complaints.
 
 ## Data Preprocessing & Feature Engineering
 
@@ -42,15 +42,15 @@ The raw dataset required several preprocessing steps before analysis:
 
 ### Data Cleaning
 
--Removed duplicate complaint records.
--Handled missing values in many fields.
--Standardized column data types.
--Converted complaint receipt dates to datetime format.
+Removed duplicate complaint records.
+Handled missing values in many fields.
+Standardized column data types.
+Converted complaint receipt dates to datetime format.
 
 ### Feature Engineering
 
--Extracted year and month from complaint receipt date.
--Created derived fields for time-based trend analysis.
+Extracted year and month from complaint receipt date.
+Created derived fields for time-based trend analysis.
 
 Cleaned and processed datasets were saved as intermediate KPI-ready tables for downstream analysis and visualization.
 
@@ -84,15 +84,15 @@ Identifies institutions with the highest complaint exposure
 The analysis is visualized using Power BI, with three interactive pages:
 
 1. Executive Overview:
-   -Overall complaint volume and trends
-   -Top consumer issues
-   -Company response outcomes
+   Overall complaint volume and trends
+   Top consumer issues
+   Company response outcomes
    ![Executive Overview](dashboards/executive_overview.png)
 
 2. Product Risk Analytics
-   -Complaint distribution by product
-   -Timely response rate by product
-   -High-risk products
+   Complaint distribution by product
+   Timely response rate by product
+   High-risk products
    ![Product Risk Analytics](dashboards/product_risk_analytics.png)
 
 3. Company Performance
